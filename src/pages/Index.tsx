@@ -97,23 +97,37 @@ const Index = () => {
         </div>
       </header>
 
-      <section id="home" className="pt-32 pb-20 px-4">
-        <div className="container mx-auto">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
-              Строим будущее с точностью и качеством
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Профессиональное строительство жилых и коммерческих объектов любой сложности. 
-              Гарантия качества на каждом этапе.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90">
-                Наши проекты
-              </Button>
-              <Button size="lg" variant="outline">
-                Получить консультацию
-              </Button>
+      <section id="home" className="relative h-screen w-full overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="https://cdn.coverr.co/videos/coverr-construction-site-time-lapse-6267/1080p.mp4" type="video/mp4" />
+        </video>
+        
+        <div className="absolute inset-0 bg-black/50" />
+        
+        <div className="relative h-full flex items-center px-4">
+          <div className="container mx-auto">
+            <div className="max-w-3xl">
+              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Строим будущее с точностью и качеством
+              </h1>
+              <p className="text-xl md:text-2xl text-white/90 mb-8">
+                Профессиональное строительство жилых и коммерческих объектов любой сложности. 
+                Гарантия качества на каждом этапе.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white">
+                  Наши проекты
+                </Button>
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                  Получить консультацию
+                </Button>
+              </div>
             </div>
           </div>
         </div>
